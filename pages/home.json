@@ -1,0 +1,46 @@
+{
+    "hero": {
+        "header1": "Learn to <br>Recycle",
+        "header2": "Machine learning<br>Model",
+        "header3": "Connect with <br>NGO's",
+        "description1": "jdfkas  lfsalskj sa l klslsdjlks   ",
+        "description2": "fas fsd fsa fsa fsadsa",
+        "description3": " saddddddsad fsad sd sadfasd ",
+        "image1": "/images/learntorecycle.jpg",
+        "image2": "/images/ngoslogo.jpg",
+        "image3": "/images/machinelearningmodel.jpg",
+        "button1": "BLOG",
+        "button2": "Click Here!",
+        "button3": "NGO's"
+    },
+    "about": {
+        "image": "/images/about.jpg",
+        "reduce": "/images/reduce.jpg",
+        "recycle": "/images/recycle.jpg",
+        "reuse": "/images/reuse.jpg",
+        "description": "We buy a lot of things everyday and we throw a lot of things everyday. On average a typical family will throw away around 40kg of plastic that could be recycled each year. It is estimated that at least 50% of the ‘rubbish’ in our rubbish bins could be reused or recycled instead of being thrown away. It is estimated that each year we generate 3% more waste than the previous year. Considering we are supposed to be recycling more, this is pretty shocking. Dealing with waste has become an incrementing concern nowadays, since it affects people’s life and health and it negatively impacts the environmental sustainability. The common belief is that the ways to reduce pollution are not effective enough so they do not even try . Most of the materials we discard as trash can authentically be recycled by cleaning, processing, and turning them into something else A website where people can learn how to Reduce , Reuse , Recycle with the help of vivid imagery videos and detailed steps. People will have information on products that are harmful for nature and their healthier alternatives. People can find information on how to recycle any product . People can connect to various NGOs to donate the stuff they don’t use anymore. "
+    },
+    "counter": {
+        "image": "/images/bg_4.jpg"
+    },
+    "testimony": {
+        "ngo1": "Green Yatra",
+        "ngo2": "TRDC India",
+        "ngo3": "SankalpTaru",
+        "ngo4": "Chintan",
+        "ngo5": "JanMitra",
+        "image1": "/images/ngo1.jpg",
+        "image2": "/images/ngo2.jpg",
+        "image3": "/images/ngo3.jpg",
+        "image4": "/images/ngo4.jpg",
+        "image5": "/images/ngo5.jpg",
+        "testimony1": "Something must be written here",
+        "testimony2": "Something must be written here",
+        "testimony3": "Something must be written here",
+        "testimony4": "Something must be written here",
+        "testimony5": "Something must be written here"
+    },
+    "contactus":{
+        "image":"/images/bg_6.jpg"
+    }
+}

@@ -12,14 +12,14 @@
       	<div class="overlay"></div>
         <div class="container-fluid p-0">
           <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/bg_3.jpg);">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{page.hero.image1}});">
           		<div class="overlay"></div>
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 	          	<div class="text mt-md-5">
-		            <h1 class="mb-4">Eat Healthy <br> and Natural Foods</h1>
-		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-		            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Book A Table</a></p>
+		            <h1 class="mb-4">{{{page.hero.header1}}}</h1>
+		            <p>{{{page.hero.description1}}}</p>
+		            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">{{{page.hero.button1}}}</a></p>
 	            </div>
 	          </div>
         	</div>
@@ -30,48 +30,66 @@
       	<div class="overlay"></div>
         <div class="container-fluid p-0">
           <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(images/bg_2.jpg);">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{page.hero.image3}});">
           		<div class="overlay"></div>
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 	          	<div class="text mt-md-5">
-		            <h1 class="mb-4">We Love <br> Delicious Foods</h1>
-		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-		            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Book A Table</a></p>
+		            <h1 class="mb-4">{{{page.hero.header2}}}</h1>
+		            <p>{{{page.hero.description2}}}</p>
+		            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">{{{page.hero.button2}}}</a></p>
 	            </div>
 	          </div>
         	</div>
         </div>
       </div>
+
+	  <div class="slider-item js-fullheight">
+      	<div class="overlay"></div>
+        <div class="container-fluid p-0">
+          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+          	<div class="one-third order-md-last img js-fullheight" style="background-image:url({{page.hero.image2}});">
+          		<div class="overlay"></div>
+          	</div>
+	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+	          	<div class="text mt-md-5">
+		            <h1 class="mb-4">{{{page.hero.header3}}}</h1>
+		            <p>{{{page.hero.description3}}}</p>
+		            <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">{{{page.hero.button3}}}</a></p>
+	            </div>
+	          </div>
+        	</div>
+        </div>
+      </div>
+
     </section>
-	
 
 		<section class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url(images/about.jpg); position: relative"></div>
+					<div class="col-sm-5 img img-2 d-flex align-items-center justify-content-center justify-content-md-end" style="background-image: url({{page.about.image}}); position: relative"></div>
 					<div class="col-sm-7 wrap-about py-5 ftco-animate">
 	          <div class="heading-section mt-5 mb-4">
 	          	<div class="pl-lg-5 ml-md-5">
 		          	<span class="subheading">About</span>
-		            <h2 class="mb-4">Welcome to {{title}}</h2>
+		            <h2 class="mb-4">Welcome to {{global.title}}</h2>
 	            </div>
 	          </div>
 	          <div class="pl-lg-5 ml-md-5">
-							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-							<h3 class="mt-5">Special Recipe</h3>
+							<p>{{{page.about.description}}}</p>
+							<h3 class="mt-5">Our Three Principles</h3>
 							<div class="thumb my-4 d-flex">
 	            	<a href="#" class="thumb-menu pr-md-4 text-center">
-	            		<div class="img" style="background-image: url(images/lunch-4.jpg);"></div>
-	            		<h4>Australian Organic Beef</h4>
+	            		<div class="img" style="background-image: url({{page.about.reduce}});"></div>
+	            		<h4>Reduce</h4>
 	            	</a>
 	            	<a href="#" class="thumb-menu pr-md-4 text-center">
-	            		<div class="img" style="background-image: url(images/lunch-7.jpg);"></div>
-	            		<h4>Australian Organic Beef</h4>
+	            		<div class="img" style="background-image: url({{page.about.reuse}});"></div>
+	            		<h4>Reuse</h4>
 	            	</a>
 	            	<a href="#" class="thumb-menu pr-md-4 text-center">
-	            		<div class="img" style="background-image: url(images/lunch-6.jpg);"></div>
-	            		<h4>Australian Organic Beef</h4>
+	            		<div class="img" style="background-image: url({{page.about.recycle}});"></div>
+	            		<h4>Recycle</h4>
 	            	</a>
 	            </div>
 						</div>
@@ -80,7 +98,9 @@
 			</div>
 		</section>
 
-		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+		<br>
+
+		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{page.counter.image}});" data-stellar-background-ratio="0.5">
     	<div class="container">
     		<div class="row d-md-flex align-items-center justify-content-center">
     			<div class="col-lg-10">
@@ -89,7 +109,7 @@
 		            <div class="block-18">
 		              <div class="text">
 		                <strong class="number" data-number="18">0</strong>
-		                <span>Years of Experienced</span>
+		                <span>Partner NGO's</span>
 		              </div>
 		            </div>
 		          </div>
@@ -101,7 +121,8 @@
 		              </div>
 		            </div>
 		          </div>
-		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+		          <!--
+				  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18">
 		              <div class="text">
 		                <strong class="number" data-number="564">0</strong>
@@ -109,6 +130,7 @@
 		              </div>
 		            </div>
 		          </div>
+				  -->
 		          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		            <div class="block-18">
 		              <div class="text">
@@ -122,8 +144,9 @@
         </div>
     	</div>
     </section>
+	<br>
 
-
+<!--
     <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center mb-5 pb-2">
@@ -277,7 +300,6 @@
             </div>
         	</div>
 
-        	<!--  -->
         	<div class="col-md-6 col-lg-4 menu-wrap">
         		<div class="heading-menu text-center ftco-animate">
         			<h3>Desserts</h3>
@@ -425,13 +447,14 @@
     	</div>
 
     </section>
+	-->
 
     <section class="ftco-section testimony-section" style="background-image: url(images/bg_5.jpg);" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
           	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">Happy Customer</h2>
+            <h2 class="mb-4">Partner NGO's</h2>
           </div>
         </div>
         <div class="row ftco-animate justify-content-center">
@@ -439,71 +462,71 @@
             <div class="carousel-testimony owl-carousel ftco-owl">
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{page.testimony.image5}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{{page.testimony.testimony1}}}</p>
+                    <p class="name">{{page.testimony.ngo1}}</p>
+                    <span class="position">NGO</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{page.testimony.image1}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{{page.testimony.testimony2}}}</p>
+                    <p class="name">{{page.testimony.ngo2}}</p>
+                    <span class="position">NGO</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{page.testimony.image2}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{{page.testimony.testimony3}}}</p>
+                    <p class="name">{{page.testimony.ngo3}}</p>
+                    <span class="position">NGO</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_4.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{page.testimony.image3}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{{page.testimony.testimony4}}}</p>
+                    <p class="name">{{page.testimony.ngo4}}</p>
+                    <span class="position">NGO</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap text-center py-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img mb-4" style="background-image: url({{page.testimony.image4}})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text p-3">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Arthur Browner</p>
-                    <span class="position">Customer</span>
+                    <p class="mb-4">{{{page.testimony.testimony5}}}</p>
+                    <p class="name">{{page.testimony.ngo5}}</p>
+                    <span class="position">NGO</span>
                   </div>
                 </div>
               </div>
@@ -513,15 +536,16 @@
       </div>
     </section>
 			
+			<br>
 
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container">
 				<div class="row d-flex">
-          <div class="col-md-5 ftco-animate img img-2" style="background-image: url(images/bg_6.jpg);"></div>
+          <div class="col-md-5 ftco-animate img img-2" style="background-image: url({{page.contactus.image}});"></div>
           <div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
           	<div class="heading-section ftco-animate mb-5">
-	          	<span class="subheading">Book a Table</span>
-	            <h2 class="mb-4">Make Reservation</h2>
+	          	<span class="subheading">Contact Us</span>
+	            <h2 class="mb-4">Enter your details</h2>
 	          </div>
             <form action="#">
               <div class="row">
@@ -543,36 +567,29 @@
                     <input type="text" class="form-control" placeholder="Phone">
                   </div>
                 </div>
-                <div class="col-md-6">
+                <!--
+				<div class="col-md-6">
                   <div class="form-group">
                     <label for="">Phone</label>
-                    <input type="text" class="form-control" id="book_date" placeholder="Date">
+                    <input type="text" class="form-control" id="book_date" placeholder="Phone">
                   </div>
                 </div>
+				-->
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Time</label>
-                    <input type="text" class="form-control" id="book_time" placeholder="Time">
+                    <label for="">Subject</label>
+                    <input type="text" class="form-control" id="book_time" placeholder="Subject">
                   </div>
                 </div>
-                <div class="col-md-6">
+				<div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Person</label>
-                    <div class="select-wrap one-third">
-                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
-                        <option value="">Person</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4+</option>
-                      </select>
-                    </div>
+                    <label for="">Your Query!</label>
+                    <input type="text" class="form-control" id="book_time" placeholder="Write from here!!!">
                   </div>
                 </div>
                 <div class="col-md-12 mt-3">
                   <div class="form-group">
-                    <input type="submit" value="Make a Reservation" class="btn btn-primary py-3 px-5">
+                    <input type="submit" value="Contact Us" class="btn btn-primary py-3 px-5">
                   </div>
                 </div>
               </div>
@@ -581,6 +598,8 @@
         </div>
 			</div>
 		</section>
+
+		<br>
 
     {{>footer}}
 	{{>scripts}}
