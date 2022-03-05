@@ -11,9 +11,17 @@
     "postinstall": "turbo postinstall"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "opencv4nodejs": "^5.6.0",
+    "socket.io": "^4.4.1",
     "turbo360": "^1.8.69",
-    "vertex360": "^0.30.39",
-    "express": "^4.17.1"
+    "vertex360": "^0.30.39"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "C:\\tools\\opencv\\build\\include",
+    "opencvLibDir": "C:\\tools\\opencv\\build\\x64\\vc14\\lib",
+    "opencvBinDir": "C:\\tools\\opencv\\build\\x64\\vc14\\bin"
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
