@@ -42,6 +42,9 @@ cocoSsd.load().then(function (loadedModel) {
 // upon click.
 ********************************************************************/
 
+
+
+
 // In this demo, we have put all our clickable images in divs with the 
 // CSS class 'classifyOnClick'. Lets get all the elements that have
 // this class.
