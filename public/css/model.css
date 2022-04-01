@@ -101,4 +101,6 @@
   
   .classifyOnClick img {
     width: 100%;
+    visibility:hidden;
+    
   }
