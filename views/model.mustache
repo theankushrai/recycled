@@ -2,17 +2,12 @@
 <html lang="en">
   <head>
     <title>object Detection</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="css/model.css">
-    <link rel="stylesheet" href="css/model2.css">
+      {{>head}}
+      <link rel="stylesheet" href="css/model.css">
   
   </head>  
   <body>
-  {{>nav}}
+{{>nav}}  
     <h1>Object Detection</h1>
 
     <h2>How to use</h2>
@@ -43,6 +38,8 @@
         <video playinline autoplay muted id="webcam" ></video>
       </div>
     </section>
+    {{! <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> }}
+    
     {{>footer}}
     
     <!-- Import TensorFlow.js library -->
@@ -54,6 +51,6 @@
     <!-- Import the page's JavaScript to do some stuff -->
     <script src="js/model.js" defer></script>
     <script src="js/model2.js" defer></script>
-    
+    {{>scripts}}
   </body>
 </html>

@@ -1,4 +1,5 @@
 
+//uploading new image via image selector
 const image_input = document.querySelector("#image_input");
 var uploaded_image;
 
@@ -11,4 +12,3 @@ image_input.addEventListener('change', function() {
   });
   reader.readAsDataURL(this.files[0]);
 });
-
