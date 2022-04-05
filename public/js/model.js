@@ -37,6 +37,7 @@ cocoSsd.load().then(function (loadedModel) {
 });
 
 
+
 /********************************************************************
 // Demo 1: Grab a bunch of images from the page and classify them
 // upon click.
@@ -70,6 +71,10 @@ function handleClick(event) {
   model.detect(event.target).then(function (predictions) {
     // Lets write the predictions to a new paragraph element and
     // add it to the DOM.
+
+    //variable to store thing name
+    var thingname='';
+
     console.log(predictions);
     for (let n = 0; n < predictions.length; n++) {
       // Description text
@@ -93,8 +98,15 @@ function handleClick(event) {
 
       event.target.parentNode.appendChild(highlighter);
       event.target.parentNode.appendChild(p);
+      //storing thing in sessionStorage
+      thingname=predictions[n].class;
+      
     }
-  });
+    window.sessionStorage.setItem('thing',thingname);
+    console.log('thing name stored');
+    window.location.href="/thing";
+  }
+  );
 }
 
 
