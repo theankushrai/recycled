@@ -9,11 +9,11 @@ router.get('/', (req, res, next) => {
     res.render('home', data)
 })
 
-router.get('/blog', (req, res, next) => {
+router.get('/thing', (req, res, next) => {
 
     const data = req.context
 
-    res.render('blog', data)
+    res.render('thing', data)
 })
 router.get('/model', (req, res, next) => {
 
@@ -21,4 +21,5 @@ router.get('/model', (req, res, next) => {
 
     res.render('model', data)
 })
+
 module.exports = router
