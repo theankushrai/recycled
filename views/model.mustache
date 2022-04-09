@@ -8,9 +8,11 @@
   </head>  
   <body>
 {{>nav}}  
+  <br>
     <h1>Object Detection</h1>
-
+  <br>
     <h2>How to use</h2>
+    <br>
     <p>Please wait for the model to load before trying the demos below at which point they will become visible when ready to use.</p>
     
     <section id="demos" class="invisible">
@@ -21,25 +23,27 @@
       {{! upload iamges }}
 
       <input type="file" id="image_input">
-
+      <br>
       <div class="classifyOnClick">
         <img id="display_image" width="100%" crossorigin="anonymous" title="Click to get classification!"/>
       </div>
       {{! <div class="classifyOnClick">
         <img src="https://cdn.glitch.com/74418d0b-3465-49a2-8c71-a721b7734473%2Fcats_flickr_publicdomain.jpg?v=1579294753947" width="100%" crossorigin="anonymous" title="Click to get classification!" />
       </div> }}
-
-
+      
+      <br>
       <h2>Webcam continuous classification</h2>
-      <p>Hold some objects up close to your webcam to get a real-time classification! You must be on <a href="https://codepen.io/jasonmayes/pen/qBEJxgg">the https version of the website</a> for this to work. When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+      <p>Hold some objects up close to your webcam to get a real-time classification! You must be on the https version of the website for this to work. When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
       
       <div id="liveView" class="videoView">
         <button id="webcamButton">Enable Webcam</button>
+        <br>
         <video playinline autoplay muted id="webcam" ></video>
       </div>
     </section>
     {{! <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> }}
-    
+    <br>
+    <br>
     {{>footer}}
     
     <!-- Import TensorFlow.js library -->
