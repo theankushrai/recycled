@@ -15,6 +15,6 @@ function replacething(){
     document.getElementById('thingimage').setAttribute('src',obj[thing].image);
     document.getElementById('thingvideo').setAttribute('src',obj[thing].videourl);
     console.log('thing replaced');
-    // sessionStorage.removeItem('thing');
+    sessionStorage.removeItem('thing');
     console.log('thing name deleted');
 }

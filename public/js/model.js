@@ -167,12 +167,16 @@ function enableCam(event) {
 function predictWebcam() {
   // Now let's start classifying the stream.
   model.detect(video).then(function (predictions) {
+
     // Remove any highlighting we did previous frame.
     for (let i = 0; i < children.length; i++) {
       liveView.removeChild(children[i]);
     }
     children.splice(0);
-    
+
+
+    var thingname='';
+
     // Now lets loop through predictions and draw them to the live view if
     // they have a high confidence score.
     for (let n = 0; n < predictions.length; n++) {
@@ -201,10 +205,17 @@ function predictWebcam() {
         // Store drawn objects in memory so we can delete them next time around.
         children.push(highlighter);
         children.push(p);
+        thingname=predictions[n].class;
+        window.sessionStorage.setItem('thing',thingname);
+        console.log('liveview thing name stored');
+        window.location.href="/thing";
+        return;
       }
+      
     }
     
     // Call this function again to keep predicting when the browser is ready.
+    
     window.requestAnimationFrame(predictWebcam);
   });
 }
