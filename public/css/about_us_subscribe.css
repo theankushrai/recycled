@@ -1,0 +1,19 @@
+
+.container1 {
+    font-family: Arial;
+    padding: 1%;
+    border-radius:  10px;
+    margin: 0.2%;
+    color: white;
+    background-color: #8c97e0;
+  }
+  hr{
+    border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  }
+  input{
+    opacity: 50%;
+    width: 100%;
+    background-color: black;
+    height: 30px;
+  }

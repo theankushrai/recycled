@@ -576,19 +576,19 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" class="form-control" placeholder="Your Name">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control" placeholder="Your Email">
+                    <input type="text" class="form-control" placeholder="Your Email" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Phone</label>
-                    <input type="text" class="form-control" placeholder="Phone">
+                    <input type="text" class="form-control" placeholder="Phone" >
                   </div>
                 </div>
                 <!--
@@ -602,18 +602,18 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="">Subject</label>
-                    <input type="text" class="form-control" id="book_time" placeholder="Subject">
+                    <input type="text" class="form-control" id="book_time" placeholder="Subject" required>
                   </div>
                 </div>
 				<div class="col-md-6">
                   <div class="form-group">
                     <label for="">Your Query!</label>
-                    <input type="text" class="form-control" id="book_time" placeholder="Write from here!!!">
+                    <input type="text" class="form-control" id="book_time" placeholder="Write from here!!!" required>
                   </div>
                 </div>
                 <div class="col-md-12 mt-3">
                   <div class="form-group">
-                    <input type="submit" value="Contact Us" class="btn btn-primary py-3 px-5">
+                    <input type="submit" value="Contact Us" onclick="contact()" class="btn btn-primary py-3 px-5">
                   </div>
                 </div>
               </div>
@@ -626,6 +626,11 @@
 		<br>
 
     {{>footer}}
+	<script>
+      function contact() {
+        window.alert("Thank you for your Feedback!!");
+      }
+    </script>
 	{{>scripts}}
     <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
